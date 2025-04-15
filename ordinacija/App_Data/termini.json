@@ -1,0 +1,145 @@
+[
+  {
+    "Id": 1722965261,
+    "Lekar": 123456789,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "06/08/2024 22:30",
+    "DatumIVremeD": "2024-08-06T22:30:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "Ivan",
+    "LekarPrezime": "Ivanovic"
+  },
+  {
+    "Id": 1722965265,
+    "Lekar": 123456789,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "06/08/2024 23:30",
+    "DatumIVremeD": "2024-08-06T23:30:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "B3,Omega 3",
+    "LekarIme": "Ivan",
+    "LekarPrezime": "Ivanovic"
+  },
+  {
+    "Id": 1722965279,
+    "Lekar": 123456789,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "06/08/2024 13:30",
+    "DatumIVremeD": "2024-08-06T13:30:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "f",
+    "LekarIme": "dr. Ivan",
+    "LekarPrezime": "Ivanovic"
+  },
+  {
+    "Id": 1722965298,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "10/08/2024 10:45",
+    "DatumIVremeD": "2024-08-10T10:45:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1722965301,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "10/08/2024 11:45",
+    "DatumIVremeD": "2024-08-10T11:45:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "B12,B1",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1722965306,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "10/08/2024 15:45",
+    "DatumIVremeD": "2024-08-10T15:45:00",
+    "Pacijent": 1200329929293,
+    "OpisTerapije": "B4,B5,C",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1722965310,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "10/08/2024 16:45",
+    "DatumIVremeD": "2024-08-10T16:45:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1722965475,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "30/08/2024 12:35",
+    "DatumIVremeD": "2024-08-30T12:35:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1722965476,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "30/08/2024 13:35",
+    "DatumIVremeD": "2024-08-30T13:35:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1722965478,
+    "Lekar": 987654321,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "30/08/2024 14:35",
+    "DatumIVremeD": "2024-08-30T14:35:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  },
+  {
+    "Id": 1723553251,
+    "Lekar": 123456789,
+    "Status": "ZAKAZAN",
+    "DatumIVreme": "29/08/2024 14:47",
+    "DatumIVremeD": "2024-08-29T14:47:00",
+    "Pacijent": 1200329929292,
+    "OpisTerapije": "",
+    "LekarIme": "dr. Ivan",
+    "LekarPrezime": "Ivanovic"
+  },
+  {
+    "Id": 1723553419,
+    "Lekar": 123456789,
+    "Status": "SLOBODAN",
+    "DatumIVreme": "29/08/2024 14:50",
+    "DatumIVremeD": "2024-08-29T14:50:00",
+    "Pacijent": 0,
+    "OpisTerapije": "",
+    "LekarIme": "dr. Ivan",
+    "LekarPrezime": "Ivanovic"
+  },
+  {
+    "Id": 1723553469,
+    "Lekar": 987654321,
+    "Status": "SLOBODAN",
+    "DatumIVreme": "24/08/2024 17:51",
+    "DatumIVremeD": "2024-08-24T17:51:00",
+    "Pacijent": 0,
+    "OpisTerapije": "",
+    "LekarIme": "Ana",
+    "LekarPrezime": "Anic"
+  }
+]

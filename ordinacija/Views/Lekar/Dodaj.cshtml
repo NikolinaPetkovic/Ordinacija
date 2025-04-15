@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviDodajTermin.css" rel="stylesheet" />
+    <title>Lekar - Dodaj termin</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Dodaj Termin</h2>
+        <form action="/Lekar/Dodavanje" method="post" class="mt-3">
+            <div class="form-group">
+                <label for="termin_vreme" class="form-label">Datum i Vreme</label>
+                <input type="datetime-local" class="form-control" id="termin_vreme" name="termin_vreme" required />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Dodaj Termin</button>
+            <a href="Index" class="btn btn-secondary mt-3">Nazad</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Common.dll
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Common.pdb
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.csproj.Up2Date
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.dll
+C:\Users\Korisnik\Downloads\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Common.dll
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Common.pdb
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.csproj.Up2Date
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.dll
+C:\Users\Korisnik\Desktop\razni projekti\ordinacija-main (1)\ordinacija-main\Common\obj\Debug\Common.pdb

@@ -1,0 +1,32 @@
+[
+  {
+    "Ime": "dr. Ivan",
+    "Prezime": "Ivanovic",
+    "DatumRodjenja": "01/01/1975",
+    "ElektronskaPosta": "ivan.ivanovic@dr.com",
+    "ZakazaniISlobodniTermini": [],
+    "Id": 123456789,
+    "KorisnickoIme": "dr",
+    "Sifra": "dr"
+  },
+  {
+    "Ime": "Ana",
+    "Prezime": "Anic",
+    "DatumRodjenja": "15/05/1980",
+    "ElektronskaPosta": "ana.anic@dr.com",
+    "ZakazaniISlobodniTermini": [],
+    "Id": 987654321,
+    "KorisnickoIme": "dr2",
+    "Sifra": "dr2"
+  },
+  {
+    "Ime": "Marko",
+    "Prezime": "Markovic",
+    "DatumRodjenja": "10/10/1978",
+    "ElektronskaPosta": "marko.markovic@dr.com",
+    "ZakazaniISlobodniTermini": [],
+    "Id": 123123123,
+    "KorisnickoIme": "dr3",
+    "Sifra": "dr3"
+  }
+]

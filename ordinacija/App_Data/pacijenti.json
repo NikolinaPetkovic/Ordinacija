@@ -1,0 +1,38 @@
+[
+  {
+    "JMBG": "1200329929292",
+    "Ime": "Nikolina",
+    "Prezime": "Petkovic",
+    "DatumRodjenja": "01/12/2002",
+    "DatumRodjenjaD": "2002-12-01T00:00:00",
+    "ElektronskaPosta": "petkovic@uns.ac.rs",
+    "ZakazaniTermini": [],
+    "Id": 1200329929292,
+    "KorisnickoIme": "nikolina",
+    "Sifra": "123"
+  },
+  {
+    "JMBG": "1200329929293",
+    "Ime": "Nikolina",
+    "Prezime": "Nikolic",
+    "DatumRodjenja": "01/09/2001",
+    "DatumRodjenjaD": "2001-09-01T00:00:00",
+    "ElektronskaPosta": "nikolic@uns.ac.rs",
+    "ZakazaniTermini": [],
+    "Id": 1200329929293,
+    "KorisnickoIme": "niki",
+    "Sifra": "123"
+  },
+  {
+    "JMBG": "2019210921029",
+    "Ime": "David",
+    "Prezime": "Nanic",
+    "DatumRodjenja": "05/12/2001",
+    "DatumRodjenjaD": "2001-12-05T00:00:00",
+    "ElektronskaPosta": "daviid@uns.ac.rs",
+    "ZakazaniTermini": [],
+    "Id": 2019210921029,
+    "KorisnickoIme": "david",
+    "Sifra": "123"
+  }
+]

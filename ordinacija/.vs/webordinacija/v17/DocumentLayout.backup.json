@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|c:\\users\\korisnik\\desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_themes\\stilovidodajpacijenta.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_themes\\stilovidodajpacijenta.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_themes\\stiloviadminpocetna.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_themes\\stiloviadminpocetna.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_data\\termini.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_data\\termini.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_data\\pacijenti.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_data\\pacijenti.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_data\\lekari.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_data\\lekari.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_data\\kartoni.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_data\\kartoni.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\app_data\\administratori.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC9CEE88-D28D-4465-8297-CF8BAE849DFA}|webordinacija.csproj|solutionrelative:app_data\\administratori.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T13:45:19.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StiloviDodajPacijenta.css",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Themes\\StiloviDodajPacijenta.css",
+              "RelativeDocumentMoniker": "App_Themes\\StiloviDodajPacijenta.css",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Themes\\StiloviDodajPacijenta.css",
+              "RelativeToolTip": "App_Themes\\StiloviDodajPacijenta.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-13T13:45:15.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StiloviAdminPocetna.css",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Themes\\StiloviAdminPocetna.css",
+              "RelativeDocumentMoniker": "App_Themes\\StiloviAdminPocetna.css",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Themes\\StiloviAdminPocetna.css",
+              "RelativeToolTip": "App_Themes\\StiloviAdminPocetna.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-13T13:44:34.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T13:44:24.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "termini.json",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\termini.json",
+              "RelativeDocumentMoniker": "App_Data\\termini.json",
+              "ToolTip": "C:\\Users\\Korisnik\\Downloads\\ordinacija-main (1)\\ordinacija-main\\App_Data\\termini.json*",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\ordinacija-main (1)\\ordinacija-main\\App_Data\\termini.json*",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-13T13:43:02.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pacijenti.json",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\pacijenti.json",
+              "RelativeDocumentMoniker": "App_Data\\pacijenti.json",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\pacijenti.json",
+              "RelativeToolTip": "App_Data\\pacijenti.json",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-13T13:42:58.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "lekari.json",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\lekari.json",
+              "RelativeDocumentMoniker": "App_Data\\lekari.json",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\lekari.json",
+              "RelativeToolTip": "App_Data\\lekari.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-13T13:42:33.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "kartoni.json",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\kartoni.json",
+              "RelativeDocumentMoniker": "App_Data\\kartoni.json",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\kartoni.json",
+              "RelativeToolTip": "App_Data\\kartoni.json",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-13T13:42:27.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "administratori.json",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\administratori.json",
+              "RelativeDocumentMoniker": "App_Data\\administratori.json",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\razni projekti\\ordinacija-main (1)\\ordinacija-main\\App_Data\\administratori.json",
+              "RelativeToolTip": "App_Data\\administratori.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-13T13:42:18.363Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

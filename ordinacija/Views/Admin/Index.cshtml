@@ -1,0 +1,100 @@
+﻿@model List<webordinacija.Models.Pacijent>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviAdminPocetna.css" rel="stylesheet" />
+    <title>Pacijenti</title>
+</head>
+<body>
+    <br/>
+    <div class="container mt-4">
+        <h2 class="page-title">Pacijenti</h2>
+        <a href="/Admin/Dodaj" style="text-decoration: none; padding: 10px 20px; background-color: #6d4c41; color: #ffffff; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;" class="btn-primary">Dodaj Pacijenta</a>
+        <a href="/Main/Odjava" style="text-decoration: none; padding: 10px 20px; background-color: crimson; color: #ffffff; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;" class="btn-secondary">Odjava</a>
+        <br/>
+        <br/>
+        <!-- Forma za filtriranje -->
+        <form method="get" action="@Url.Action("Index")" class="filter-form">
+            <div class="form-group">
+                <label for="korisnickoImeFilter">Korisničko Ime:</label>
+                <input type="text" id="korisnickoImeFilter" name="korisnickoImeFilter" value="@Request.QueryString["korisnickoImeFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="jmbgFilter">JMBG:</label>
+                <input type="text" id="jmbgFilter" name="jmbgFilter" value="@Request.QueryString["jmbgFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="imeFilter">Ime:</label>
+                <input type="text" id="imeFilter" name="imeFilter" value="@Request.QueryString["imeFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="prezimeFilter">Prezime:</label>
+                <input type="text" id="prezimeFilter" name="prezimeFilter" value="@Request.QueryString["prezimeFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="datumRodjenjaFilter">Datum Rođenja:</label>
+                <input type="date" id="datumRodjenjaFilter" name="datumRodjenjaFilter" value="@Request.QueryString["datumRodjenjaFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="elektronskaPostaFilter">Elektronska Pošta:</label>
+                <input type="text" id="elektronskaPostaFilter" name="elektronskaPostaFilter" value="@Request.QueryString["elektronskaPostaFilter"]" />
+            </div>
+
+            <!-- Dugmad za filtriranje i odjavu -->
+            <div class="filter-buttons">
+                <button type="submit" class="btn-primary">Filtriraj</button>
+                <a href="/Admin/Index"style="text-decoration: none; padding: 10px 20px; background-color: dimgray; color: #ffffff; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;" class="btn-primary">Poništi filtere</a>
+        </div>
+        
+        </form>
+
+        <!-- Sortiranje -->
+        <div class="mb-3">
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "jmbg" ? "jmbg_desc" : "jmbg", korisnickoImeFilter = Request.QueryString["korisnickoImeFilter"], jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], datumRodjenjaFilter = Request.QueryString["datumRodjenjaFilter"], elektronskaPostaFilter = Request.QueryString["elektronskaPostaFilter"] })" class="sort-link">JMBG @(ViewBag.CurrentSort == "jmbg" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "ime" ? "ime_desc" : "ime", korisnickoImeFilter = Request.QueryString["korisnickoImeFilter"], jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], datumRodjenjaFilter = Request.QueryString["datumRodjenjaFilter"], elektronskaPostaFilter = Request.QueryString["elektronskaPostaFilter"] })" class="sort-link">Ime @(ViewBag.CurrentSort == "ime" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "prezime" ? "prezime_desc" : "prezime", korisnickoImeFilter = Request.QueryString["korisnickoImeFilter"], jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], datumRodjenjaFilter = Request.QueryString["datumRodjenjaFilter"], elektronskaPostaFilter = Request.QueryString["elektronskaPostaFilter"] })" class="sort-link">Prezime @(ViewBag.CurrentSort == "prezime" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "datumRodjenja" ? "datumRodjenja_desc" : "datumRodjenja", korisnickoImeFilter = Request.QueryString["korisnickoImeFilter"], jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], datumRodjenjaFilter = Request.QueryString["datumRodjenjaFilter"], elektronskaPostaFilter = Request.QueryString["elektronskaPostaFilter"] })" class="sort-link">Datum Rođenja @(ViewBag.CurrentSort == "datumRodjenja" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "elektronskaPosta" ? "elektronskaPosta_desc" : "elektronskaPosta", korisnickoImeFilter = Request.QueryString["korisnickoImeFilter"], jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], datumRodjenjaFilter = Request.QueryString["datumRodjenjaFilter"], elektronskaPostaFilter = Request.QueryString["elektronskaPostaFilter"] })" class="sort-link">Elektronska Pošta @(ViewBag.CurrentSort == "elektronskaPosta" ? "↑" : "↓")</a>
+        </div>
+
+        <!-- Tabela -->
+        <div class="table-responsive rounded-table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Korisničko Ime</th>
+                        <th>JMBG</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Datum Rođenja</th>
+                        <th>Elektronska Pošta</th>
+                        <th>Izmena</th>
+                        <th>Brisanje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pacijent in Model)
+                    {
+                        <tr>
+                            <td>@pacijent.KorisnickoIme</td>
+                            <td>@pacijent.JMBG</td>
+                            <td>@pacijent.Ime</td>
+                            <td>@pacijent.Prezime</td>
+                            <td>@pacijent.DatumRodjenja</td>
+                            <td>@pacijent.ElektronskaPosta</td>
+                            <td>
+                                <a href="/Admin/Izmeni?korisnickoIme=@pacijent.KorisnickoIme" class="btn btn-warning btn-sm">Izmeni</a>
+                            </td>
+                            <td>
+                                <a href="/Admin/Brisanje?korisnickoIme=@pacijent.KorisnickoIme" class="btn btn-danger btn-sm">Obriši</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

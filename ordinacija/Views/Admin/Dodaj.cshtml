@@ -1,0 +1,46 @@
+﻿@model webordinacija.Models.Pacijent
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviDodajPacijenta.css" rel="stylesheet" />
+    <title>Dodaj Pacijenta</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="page-title">Dodaj Pacijenta</h2>
+        <form action="/Admin/DodajPacijenta" method="post" class="mt-3">
+            <div class="mb-3">
+                <label for="KorisnickoIme" class="form-label">Korisničko Ime</label>
+                <input type="text" class="form-control" id="KorisnickoIme" name="KorisnickoIme" required>
+            </div>
+            <div class="mb-3">
+                <label for="JMBG" class="form-label">JMBG</label>
+                <input type="text" class="form-control" id="JMBG" name="JMBG" minlength="13" maxlength="13" required>
+            </div>
+            <div class="mb-3">
+                <label for="Sifra" class="form-label">Šifra</label>
+                <input type="password" class="form-control" id="Sifra" name="Sifra" required>
+            </div>
+            <div class="mb-3">
+                <label for="Ime" class="form-label">Ime</label>
+                <input type="text" class="form-control" id="Ime" name="Ime" required>
+            </div>
+            <div class="mb-3">
+                <label for="Prezime" class="form-label">Prezime</label>
+                <input type="text" class="form-control" id="Prezime" name="Prezime" required>
+            </div>
+            <div class="mb-3">
+                <label for="DatumRodjenjaD" class="form-label">Datum Rođenja</label>
+                <input type="date" class="form-control" id="DatumRodjenjaD" name="DatumRodjenjaD" required>
+            </div>
+            <div class="mb-3">
+                <label for="ElektronskaPosta" class="form-label">Elektronska Pošta</label>
+                <input type="email" class="form-control" id="ElektronskaPosta" name="ElektronskaPosta" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Dodaj</button>
+            <a href="Index" class="btn btn-secondary">Nazad</a>
+        </form>
+    </div>
+</body>
+</html>

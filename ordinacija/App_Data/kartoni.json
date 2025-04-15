@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1200329929292,
+    "ListaTermina": [
+      1722965265,
+      1722965301,
+      1722965279,
+      1722965476,
+      1722965478,
+      1722965261,
+      1723553251,
+      1722965298,
+      1722965310,
+      1722965475
+    ],
+    "BrojZdravstevnogOsiguranjaPacijenta": 1200329929292
+  },
+  {
+    "Id": 1200329929293,
+    "ListaTermina": [
+      1722965306
+    ],
+    "BrojZdravstevnogOsiguranjaPacijenta": 1200329929293
+  },
+  {
+    "Id": 2019210921029,
+    "ListaTermina": [],
+    "BrojZdravstevnogOsiguranjaPacijenta": 2019210921029
+  }
+]

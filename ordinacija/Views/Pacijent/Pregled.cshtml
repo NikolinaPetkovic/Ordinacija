@@ -1,0 +1,55 @@
+﻿@model List<webordinacija.Models.Termin>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviLekarPocetna.css" rel="stylesheet" />
+    <title>Teraprije</title>
+</head>
+<body>
+    <br />
+    <div class="container mt-4">
+        <h2 class="page-title">Terapije</h2>
+        <div class="mb-3">
+            <a href="/Pacijent/Index" class="btn btn-success custom-btn">Termini</a>
+            <a href="/Main/Odjava" class="btn btn-secondary custom-btn">Odjava</a>
+        </div>
+        <br />
+
+        <table class="table table-striped rounded-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Datum i Vreme</th>
+                    <th>Ime Dr.</th>
+                    <th>Prezime Dr.</th>
+                    <th>Opis Terapije</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var termin in Model)
+                {
+                    <tr>
+                        <td>@termin.Status</td>
+                        <td>@termin.DatumIVreme</td>
+                        <td>@termin.LekarIme</td>
+                        <td>@termin.LekarPrezime</td>
+                        @{
+                            if (termin.Pacijent != 0 && string.IsNullOrEmpty(termin.OpisTerapije))
+                            {
+                                <td>
+                                    /
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="border px-4 py-2">@termin.OpisTerapije</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

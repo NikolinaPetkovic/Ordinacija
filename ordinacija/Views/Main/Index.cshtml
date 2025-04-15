@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Prijava</title>
+    <link rel="stylesheet" type="text/css" href="~/App_Themes/StiloviPrijava.css" />
+</head>
+<body>
+    <div class="login-container">
+        <form method="post" action="/Main/Prijava">
+            <h2 class="form-title">Prijava</h2>
+            <div class="form-group">
+                <label for="KorisnickoIme">Korisničko ime</label>
+                <input type="text" id="KorisnickoIme" name="KorisnickoIme" required />
+            </div>
+            <div class="form-group">
+                <label for="Sifra">Šifra</label>
+                <input type="password" id="Sifra" name="Sifra" required />
+            </div>
+            <button type="submit" class="submit-btn">Prijavi se</button>
+        </form>
+    </div>
+</body>
+</html>

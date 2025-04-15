@@ -1,0 +1,84 @@
+﻿@model List<webordinacija.Models.Termin>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviLekarPocetna.css" rel="stylesheet" />
+    <title>Pacijent - Termini</title>
+</head>
+<body>
+    <br />
+    <div class="container mt-4">
+        <h2 class="page-title">Termini</h2>
+        <div class="mb-3">
+            <a href="/Pacijent/Pregled" class="btn btn-primary custom-btn">Terapije</a>
+            <a href="/Main/Odjava" class="btn btn-secondary custom-btn">Odjava</a>
+        </div>
+        <br />
+        <form method="get" action="@Url.Action("Index")" class="filter-form">
+            <div class="form-group">
+                <label for="imeLekaraFilter">Ime Lekara:</label>
+                <input type="text" id="imeLekaraFilter" name="imeLekaraFilter" value="@Request.QueryString["imeLekaraFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="prezimeLekaraFilter">Prezime Lekara:</label>
+                <input type="text" id="prezimeLekaraFilter" name="prezimeLekaraFilter" value="@Request.QueryString["prezimeLekaraFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="statusFilter">Status:</label>
+                <select style="width: 100%;" id="statusFilter" name="statusFilter" value="@Request.QueryString["statusFilter"]">
+                    <option value="SLOBODAN">SLOBODAN</option>
+                    <option value="ZAUZET">ZAUZET</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="datumVremeFilter">Datum i Vreme:</label>
+                <input type="datetime-local" id="datumVremeFilter" name="datumVremeFilter" value="@Request.QueryString["datumVremeFilter"]" />
+            </div>
+            <div class="filter-buttons">
+                <button type="submit" class="btn-primary">Filtriraj</button>
+                <a href="/Pacijent/Index" style="text-decoration: none; padding: 10px 20px; background-color: dimgray; color: #ffffff; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;" class="btn-primary">Poništi filtere</a>
+            </div>
+        </form>
+
+        <div class="mb-3">
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "status" ? "status_desc" : "status", imeLekaraFilter = Request.QueryString["imeLekaraFilter"], prezimeLekaraFilter = Request.QueryString["prezimeLekaraFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Status @(ViewBag.CurrentSort == "status" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "datumVreme" ? "datumVreme_desc" : "datumVreme", imeLekaraFilter = Request.QueryString["imeLekaraFilter"], prezimeLekaraFilter = Request.QueryString["prezimeLekaraFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Datum i Vreme @(ViewBag.CurrentSort == "datumVreme" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "imeLekara" ? "imeLekara_desc" : "imeLekara", imeLekaraFilter = Request.QueryString["imeLekaraFilter"], prezimeLekaraFilter = Request.QueryString["prezimeLekaraFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Ime Lekara @(ViewBag.CurrentSort == "imeLekara" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "prezimeLekara" ? "prezimeLekara_desc" : "prezimeLekara", imeLekaraFilter = Request.QueryString["imeLekaraFilter"], prezimeLekaraFilter = Request.QueryString["prezimeLekaraFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Prezime Lekara @(ViewBag.CurrentSort == "prezimeLekara" ? "↑" : "↓")</a>
+        </div>
+        <br />
+        <table class="table table-striped rounded-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Datum i Vreme</th>
+                    <th>Lekar Ime</th>
+                    <th>Lekar Prezime</th>
+                    <th>Zakazivanje</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var termin in Model)
+                {
+                    <tr>
+                        <td>@termin.Status</td>
+                        <td>@termin.DatumIVreme</td>
+                        <td>@termin.LekarIme</td>
+                        <td>@termin.LekarPrezime</td>
+                        <td>
+                            @if (termin.Status == "SLOBODAN")
+                            {
+                                <form action="/Pacijent/Zakazi" method="post">
+                                    <input type="hidden" id="id" name="id" value="@termin.Id" />
+                                    <input type="submit" class="btn btn-warning custom-btn" style="padding: 7px; border: none; padding-left: 10px; padding-right: 10px;" value="Zakazi" />
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

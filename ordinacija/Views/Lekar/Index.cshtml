@@ -1,0 +1,96 @@
+﻿@model List<webordinacija.Models.Termin>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviLekarPocetna.css" rel="stylesheet" />
+    <title>Lekar - Termini</title>
+</head>
+<body>
+    <br />
+    <div class="container mt-4">
+        <h2 class="page-title">Termini</h2>
+        <div class="mb-3">
+            <a href="/Lekar/Dodaj" class="btn btn-primary custom-btn">Dodaj Termin</a>
+            <a href="/Lekar/Pregled" class="btn btn-success custom-btn">Terapije</a>
+            <a href="/Main/Odjava" class="btn btn-secondary custom-btn">Odjava</a>
+        </div>
+        <br/>
+        <form method="get" action="@Url.Action("Index")" class="filter-form">
+            <div class="form-group">
+                <label for="jmbgFilter">JMBG:</label>
+                <input type="text" id="jmbgFilter" name="jmbgFilter" value="@Request.QueryString["jmbgFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="imeFilter">Ime:</label>
+                <input type="text" id="imeFilter" name="imeFilter" value="@Request.QueryString["imeFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="prezimeFilter">Prezime:</label>
+                <input type="text" id="prezimeFilter" name="prezimeFilter" value="@Request.QueryString["prezimeFilter"]" />
+            </div>
+            <div class="form-group">
+                <label for="statusFilter">Status:</label>
+                <select style="width: 100%;" id="statusFilter" name="statusFilter" value="@Request.QueryString["statusFilter"]">
+                    <option value="SLOBODAN">SLOBODAN</option>
+                    <option value="ZAKAZAN">ZAKAZAN</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="datumVremeFilter">Datum i Vreme:</label>
+                <input type="datetime-local" id="datumVremeFilter" name="datumVremeFilter" value="@Request.QueryString["datumVremeFilter"]" />
+            </div>
+            <div class="filter-buttons">
+                <button type="submit" class="btn-primary">Filtriraj</button>
+                <a href="/Lekar/Index" style="text-decoration: none; padding: 10px 20px; background-color: dimgray; color: #ffffff; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;" class="btn-primary">Poništi filtere</a>
+
+            </div>
+        </form>
+
+        <div class="mb-3">
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "status" ? "status_desc" : "status", jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Status @(ViewBag.CurrentSort == "status" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "datumVreme" ? "datumVreme_desc" : "datumVreme", jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Datum i Vreme @(ViewBag.CurrentSort == "datumVreme" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "jmbg" ? "jmbg_desc" : "jmbg", jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">JMBG @(ViewBag.CurrentSort == "jmbg" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "ime" ? "ime_desc" : "ime", jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Ime @(ViewBag.CurrentSort == "ime" ? "↑" : "↓")</a>
+            <a href="@Url.Action("Index", new { sortOrder = ViewBag.CurrentSort == "prezime" ? "prezime_desc" : "prezime", jmbgFilter = Request.QueryString["jmbgFilter"], imeFilter = Request.QueryString["imeFilter"], prezimeFilter = Request.QueryString["prezimeFilter"], statusFilter = Request.QueryString["statusFilter"], datumVremeFilter = Request.QueryString["datumVremeFilter"] })" class="sort-link">Prezime @(ViewBag.CurrentSort == "prezime" ? "↑" : "↓")</a>
+        </div>
+        <br/>
+        <table class="table table-striped rounded-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Datum i Vreme</th>
+                    <th>Pacijent JMBG</th>
+                    <th>Pacijent Ime</th>
+                    <th>Pacijent Prezime</th>
+                    <th>Opis Terapije</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var termin in Model)
+                {
+                    <tr>
+                        <td>@termin.Status</td>
+                        <td>@termin.DatumIVreme</td>
+                        @{
+                            if (termin.PacijentPodaci == null)
+                            {
+                                <td>/</td>
+                                <td>/</td>
+                                <td>/</td>
+                            }
+                            else
+                            {
+                                <td>@termin.PacijentPodaci.JMBG</td>
+                                <td>@termin.PacijentPodaci.Ime</td>
+                                <td>@termin.PacijentPodaci.Prezime</td>
+                            }
+                        }
+                        <td>@termin.OpisTerapije</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

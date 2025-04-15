@@ -1,0 +1,42 @@
+﻿@using System.Globalization;
+@model webordinacija.Models.Pacijent
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviIzmena.css" rel="stylesheet" />
+    <title>Izmeni Pacijenta</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="page-title">Izmeni Pacijenta</h2>
+        <form action="/Admin/Izmena" method="post" class="mt-3">
+            <input type="hidden" name="Id" value="@Model.Id" />
+            <input type="hidden" name="JMBG" value="@Model.JMBG" />
+            <div class="mb-3">
+                <label for="Ime" class="form-label">Ime</label>
+                <input type="text" class="form-control" id="Ime" name="Ime" value="@Model.Ime" required>
+            </div>
+            <div class="mb-3">
+                <label for="Prezime" class="form-label">Prezime</label>
+                <input type="text" class="form-control" id="Prezime" name="Prezime" value="@Model.Prezime" required>
+            </div>
+            <div class="mb-3">
+                <label for="Sifra" class="form-label">Šifra</label>
+                <input type="password" class="form-control" id="Sifra" name="Sifra" value="@Model.Sifra" required>
+            </div>
+            <div class="mb-3">
+                <label for="DatumRodjenja" class="form-label">Datum Rođenja</label>
+                <input type="date" class="form-control" id="DatumRodjenjaD" name="DatumRodjenjaD" value="@Model.DatumRodjenjaD.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" required>
+            </div>
+            <div class="mb-3">
+                <label for="ElektronskaPosta" class="form-label">Elektronska Pošta</label>
+                <input type="email" class="form-control" id="ElektronskaPosta" name="ElektronskaPosta" value="@Model.ElektronskaPosta" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sačuvaj</button>
+            <a href="Index" class="btn btn-secondary">Nazad</a>
+        </form>
+    </div>
+</body>
+</html>

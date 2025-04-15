@@ -1,0 +1,73 @@
+﻿@model List<webordinacija.Models.Termin>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/App_Themes/StiloviLekarPocetna.css" rel="stylesheet" />
+    <title>Lekar - Termini</title>
+</head>
+<body>
+    <br />
+    <div class="container mt-4">
+        <h2 class="page-title">Terapije</h2>
+        <div class="mb-3">
+            <a href="/Lekar/Dodaj" class="btn btn-primary custom-btn">Dodaj Termin</a>
+            <a href="/Lekar/Pregled" class="btn btn-success custom-btn">Terapije</a>
+            <a href="/Main/Odjava" class="btn btn-secondary custom-btn">Odjava</a>
+        </div>
+        <br />
+
+        <table class="table table-striped rounded-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Datum i Vreme</th>
+                    <th>Pacijent JMBG</th>
+                    <th>Pacijent Ime</th>
+                    <th>Pacijent Prezime</th>
+                    <th>Opis Terapije</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var termin in Model)
+                {
+                    <tr>
+                        <td>@termin.Status</td>
+                        <td>@termin.DatumIVreme</td>
+                        @{
+                            if (termin.PacijentPodaci == null)
+                            {
+                                <td>/</td>
+                                <td>/</td>
+                                <td>/</td>
+                            }
+                            else
+                            {
+                                <td>@termin.PacijentPodaci.JMBG</td>
+                                <td>@termin.PacijentPodaci.Ime</td>
+                                <td>@termin.PacijentPodaci.Prezime</td>
+                            }
+                        }
+                        @{
+                            if (termin.Pacijent != 0 && string.IsNullOrEmpty(termin.OpisTerapije))
+                            {
+                                <td>
+                                    <form method="post" action="/Lekar/PrepisivanjeTerapije">
+                                        <input type="hidden" name="termin_id" value="@termin.Id" />
+                                        <input type="text" name="opis_terapije" required />
+                                        <input type="submit" class="btn btn-primary custom-btn" value="Dodaj terapiju" />
+                                    </form>
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="border px-4 py-2">@termin.OpisTerapije</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

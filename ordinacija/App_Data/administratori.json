@@ -1,0 +1,18 @@
+[
+  {
+    "Ime": "Admin",
+    "Prezime": "1",
+    "DatumRodjenja": "17/01/2001",
+    "Id": 0,
+    "KorisnickoIme": "admin",
+    "Sifra": "admin"
+  },
+  {
+    "Ime": "Admin",
+    "Prezime": "2",
+    "DatumRodjenja": "22/01/2001",
+    "Id": 0,
+    "KorisnickoIme": "admin2",
+    "Sifra": "admin2"
+  }
+]
